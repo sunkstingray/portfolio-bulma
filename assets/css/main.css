@@ -11257,9 +11257,70 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+#gear_1 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 11.5px 11.8px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#gear_1_shadow {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 12.2px 12.6px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#gear_2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 26px 19px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-left 20s linear 0s infinite;
+}
+
+#gear_2_shadow {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 27px 19.5px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-left 20s linear 0s infinite;
+}
+
+#gear_3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 50.6px 17.4px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 30s linear 0s infinite;
+}
+
+#gear_3_shadow {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 51.6px 18.4px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: rotate-right 30s linear 0s infinite;
+}
+
 #logo {
   height: 35px;
   padding: 0;
+  overflow: visible;
 }
 
 .cls-1 {

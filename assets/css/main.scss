@@ -11,9 +11,88 @@ $gear: #85ab8f;
 $text: #4C3434;
 // $text: #ed1c24;
 
+
+// Gear animation
+
+@-webkit-keyframes rotate-right {
+        from { 
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      
+      @-webkit-keyframes rotate-left {
+        from { 
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(-360deg);
+        }
+      }
+
+      @function getSpeed($speed) {
+        $secs: 200;
+        @if $speed == fastest {
+          $secs: 12;
+        } @else if $speed == really-fast {
+          $secs: 20;
+        } @else if $speed == fast {
+          $secs: 30;
+        } @else if $speed == slow {
+          $secs: 60;
+        } @else if $speed == really-slow {
+          $secs: 120;
+        } @else if $speed == slowest {
+          $secs: 200;
+        }
+        @return #{$secs}s;
+      }
+      
+      @mixin _rotate-animation($direction, $speed) {
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-animation: rotate-#{$direction} getSpeed($speed) linear 0s infinite;
+      }
+    
+      @mixin rotate($x, $y, $direction: left, $speed: slow) {
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform-origin: $x $y;
+        @include _rotate-animation($direction, $speed);
+      }
+
+
+#gear_1 {
+        @include rotate(11.5px, 11.8px, right, fastest);
+}
+
+#gear_1_shadow {
+        @include rotate(12.2px, 12.6px, right, fastest);
+}
+
+#gear_2 {
+        @include rotate(26px, 19px, left, really-fast);
+}
+
+#gear_2_shadow {
+        @include rotate(27px, 19.5px, left, really-fast);
+}
+
+#gear_3 {
+        @include rotate(50.6px, 17.4px, right, fast);
+}
+
+#gear_3_shadow {
+        @include rotate(51.6px, 18.4px, right, fast);
+}
+
+
+// General CSS
+
 #logo {
         height: 35px;
         padding: 0;
+        overflow: visible;
 }
 
 .cls-1 {
