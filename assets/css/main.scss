@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+$navbar-background-color: #fff4de;
+$footer-background-color: #fff4de;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+// non-Bulma sass variables
+
+$gear: #85ab8f;
+$text: #4C3434;
+// $text: #ed1c24;
+
+#logo {
+        height: 35px;
+        padding: 0;
+}
+
+.cls-1 {
+        mask: url(#mask);
+}
+
+.cls-2,
+.cls-3 {
+        fill: #85ab8f;
+}
+
+.cls-3,
+.cls-4,
+.cls-5 {
+        stroke: #235e33;
+        stroke-miterlimit: 10;
+}
+
+.cls-3,
+.cls-5 {
+        stroke-width: 0.25px;
+}
+
+.cls-4,
+.cls-5 {
+        fill: none;
+}
+
+.cls-4 {
+        stroke-width: 0.5px;
+}
+
+.cls-6 {
+        mask: url(#mask-2);
+}
+
+.cls-7 {
+        mask: url(#mask-3);
+}
+
+.cls-8 {
+        mask: url(#mask-4);
+}
+
+.cls-9 {
+        mask: url(#mask-5);
+}
+
+.cls-10 {
+        mask: url(#mask-6);
+}
+
+.cls-11 {
+        fill: #425a64;
+        opacity: 0.88;
+}
+
+.cls-12 {
+        fill: #fff4de;
+}
+
+.cls-13 {
+        filter: url(#luminosity-noclip-6);
+}
+
+.cls-14 {
+        filter: url(#luminosity-noclip-5);
+}
+
+.cls-15 {
+        filter: url(#luminosity-noclip-4);
+}
+
+.cls-16 {
+        filter: url(#luminosity-noclip-3);
+}
+
+.cls-17 {
+        filter: url(#luminosity-noclip-2);
+}
+
+.cls-18 {
+        filter: url(#luminosity-noclip);
+}

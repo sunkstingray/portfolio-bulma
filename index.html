@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello Bulma!</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                        <figure class="navbar-item image">
+                                <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 117.65 28.6">
+                                        <defs>
+                                                <filter id="luminosity-noclip" x="2" y="2" width="21" height="21"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-color="#fff" result="bg" />
+                                                        <feBlend in="SourceGraphic" in2="bg" />
+                                                </filter>
+                                                <mask id="mask" x="-1.45" y="-1.4" width="21" height="21" maskUnits="userSpaceOnUse">
+                                                        <g class="cls-18">
+                                                                <g transform="translate(-3.45 -3.4)">
+                                                                        <image width="21" height="21" transform="translate(2 2)"
+                                                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsSAAALEgHS3X78AAACaklEQVQ4T7WV226jShBFFzdzN8FOK8GJEiv//0F5ylOMQBiMbNNgLuY8GcWTeEaac86WStB01VI17G4UYOQ/lvqnhL/Rb6GGYQAQBAF3d3cAzGaz35UAoN+aiKIIIQSGYeB5HoqiUFUVXdex3W75/Py8VfodGoYhDw8PPD09cX9/j+u62LaNoiicTifquma73bJcLknTlCRJ/gyNooi3tzeen58RQuD7PpZloSgKXddRVRVCCBaLBUEQoGkam83mNvTl5YXX11fW6/XU6Xw+x7IsVFWl6zqklARBgOM4aJrGMAy0bUuWZd+hQgjW6zWr1Yooinh8fEQIMUEVRaHve6SUmKaJqqq0bcvxeCTLsp+h8/mcMAxZLBZX8SvUsiwAuq7jcDgQhiG+7/NVE9SyLBzHwfO86eq6Lq7rXi0foGkaHMeZ5oMgYLlckuf5NVRVVXRdR9d1DMNA07RprOs6iqIwjiOapl3FJd+27e+djuPI+XxmGAb6vmcYhqv7y/K/Pr9E27acTqfv0K7raJoGKSV1XSOlpKoqdF3nfD5PlpJSXuUcj0f2+/3PH0pKSVmWlGVJURRYljVZxjRNNE2jbVuqqmK3201RliX7/Z6vmqBlWbLZbHBdd7LMMAxXFrp0WhQFaZqSpilZlt2GHg4H3t/f0TQNYPLk1x3V9z1VVVEUBUmSEMcxSZKQpunP0IviOGYcR5qmYbfb4fs+pmlevdM8z4njmKIoKIriVwQKNw7p1WqFEILZbIbneQDUdc0wDOR5zsfHx09lk8ZbMZvNRmAMw3AMw3AERtd1R9u2b9YA481O/43+l9/JP1HvYDvpZ5tBAAAAAElFTkSuQmCC" />
+                                                                </g>
+                                                        </g>
+                                                </mask>
+                                                <filter id="luminosity-noclip-2" x="103" y="7" width="21" height="21"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-color="#fff" result="bg" />
+                                                        <feBlend in="SourceGraphic" in2="bg" />
+                                                </filter>
+                                                <mask id="mask-2" x="99.55" y="3.6" width="21" height="21" maskUnits="userSpaceOnUse">
+                                                        <g class="cls-17">
+                                                                <g transform="translate(-3.45 -3.4)">
+                                                                        <image width="21" height="21" transform="translate(103 7)"
+                                                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsSAAALEgHS3X78AAACdklEQVQ4T7WVX4+yOhCHnxZaQIkSJRrXq/3+H0rv1LhAQCzYLXAuTrZZz7uefznnl0xamuHpTKbTCmDiP5b8K4d/o5fQOI6ZzWYALBYLlsslAPP5nDiOX/0GQPjLQhjinGO73ZJlGUEQMJvNkFLSdR3DMFBVFYfDAaUUn5+ffw4Nw5A8z8myjP1+z2q1IkkSoihCSom1lr7vqaqK5XJJXddcr1fatn0Ndc6RZRnv7+/sdjvW6zVpmhJFEUIInHMYY6iqijRNOZ/PjOP4GhrHMdvtlv1+z2634+3tjTzPSdOUOI4RQmCtxRhDHMcEQYBzjvv9TlEUT2APlVKSZRmr1Yr1ek2e5x76Pf37/Q6AtZa6rtFaI+VzvT3UGEMQBCRJQpqm3haLBVEUAfiidF1HkiQopQBomuYJ6rdYLBbMZjOiKCKKIuI49nOtNVprlFJ+HoYhSimSJGGz2fgNnqBCCKSUSCkRQvjv75qmiXEcGYbBj9M0IYR48vPp13VN13VYa3HOYa3FWutTnqaJx+PxixljuFwuP0Pn8znDMND3PcYYjDG+KFprxnHk8XjQNA232422ben7Hucc8/nc+z5Bvzrly75ases6tNYMw8Dj8eB2u1GWJUVRUJYlVVUxDAPf5aF933M4HFgul6RpShAEWGtJkoQwDH2kbdtSFAXn85nT6cTxeOSPeuoopRR1XXM+n3HOUdc1SimUUj7Svu8py5LT6cTHxwdBELyOFH4/h9frlXEcud/vaK0BSJKEaZowxuCco6oqjsfjj0AAwYtLOk1TpJQ0TcNms0EIweVyeSroK72EftfXwf7pmvtJfwv6T/W/PCe/Aa1rXjRGld5GAAAAAElFTkSuQmCC" />
+                                                                </g>
+                                                        </g>
+                                                </mask>
+                                                <filter id="luminosity-noclip-3" x="14" y="7" width="25" height="25"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-color="#fff" result="bg" />
+                                                        <feBlend in="SourceGraphic" in2="bg" />
+                                                </filter>
+                                                <mask id="mask-3" x="10.55" y="3.6" width="25" height="25" maskUnits="userSpaceOnUse">
+                                                        <g class="cls-16">
+                                                                <g transform="translate(-3.45 -3.4)">
+                                                                        <image width="25" height="25" transform="translate(14 7)"
+                                                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsSAAALEgHS3X78AAACz0lEQVRIS7WW6W7jOgxGj2VLXrM0Xd7/AVtkabxosTw/CnGSNpkMcOcSIBTYso7Ij5SSAQv/s6lHE/6F/RUkyzIAtNZUVUVRFAAopVDq8RLFownGGJqmwRhDWZYsy0Lf9+z3e6qqQimFtRbv/d01Mu5okmUZy7Lw+vrKdrulbVu01gA45+j7HoAQAofDgcPhIN98t5uRaK1ZrVY0TcNut2O73VLXNVprsixjnmecc3jvGceRsiwxxjAMA8MwEGN8DOm6jpeXF7bbLZvNhvV6LRClFDFGvPdYaxmGAWMMRVHw/v7ONE1/huR5Ttu2PD8/s9vt2O12bDYbuq6jrmuMMQIJIWCtpe978jwXrUIIP9J2BdFas16vWa/XbDYb8a7raJpGIlmWhRAC0zRJpc3zjLUW5xzH45FxHCWiK0iMEa01dV3TNA1t29J1HavViqqqKMtSIN570ShBrbVYawV4E+KcA77KtqoqqqqirmsZU7qWZaEoCrIsk9SljdV1TVEUhBBkXYEkPVJaiqKQMf1O6QKu0laWJWVZysZS1Nbar7kJopSSbk6dnDzP8x/Pbs259KTVVSQxRqZpIoRAjFF8WZarMWnw3QEZY4zM8/wTMs8zp9OJYRjw3hNCIISA9148aQDIu8txnme89zjnmKbpJwS+BAdkUvJURTFG0SQ14zRNV6P3nmVZ0FrLeXYFUUrhvWeaJsZxpO/7K4D3XgRPZToMA+fzWY6UaZoElOwKEkLgdDpJueZ5LgDnHMaYq75wzgnkdDqJH4/H2yV8CUkVlnbsnLt5djnnGMdRIIfDgf1+zziOl8vePiDP5zOAhD+O491T2FrL5+cn+/2evu/lCri0u/dJ2vHb2xtPT0/SpIBokWUZIQSOxyMfHx/yzXe7C0lmjJELK1VfuhnbtkUpJWLfs4cQ+B2V1po8z6WHUjnf2v2l/RXkv9rjvxr/wH4BfKEqkfRtn7QAAAAASUVORK5CYII=" />
+                                                                </g>
+                                                        </g>
+                                                </mask>
+                                                <filter id="luminosity-noclip-4" x="36" y="2" width="32" height="32"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-color="#fff" result="bg" />
+                                                        <feBlend in="SourceGraphic" in2="bg" />
+                                                </filter>
+                                                <mask id="mask-4" x="32.55" y="-1.4" width="32" height="32" maskUnits="userSpaceOnUse">
+                                                        <g class="cls-15">
+                                                                <g transform="translate(-3.45 -3.4)">
+                                                                        <image width="32" height="32" transform="translate(36 2)"
+                                                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAAEnklEQVRYR8WXbY+bOhCFn/AeIAm7yaZb9f//r36o1NXmBUgwBmzgfqjsGzZsd2+l6o40EiTOzPF45hxnAYz8j+Z8tOBv2x8DcBwHz/NwnD8OAfwHAK7r4nmefQ+CgCRJWC6XkzW+7+O67lyIWfs34m/M932SJMF1XZqmQQjBw8MDaZoyDAN5nnM+n0mSBN/3qesaKeVHYQFY8IkmzLKM3W5HHMe4rss4jqRpynK5ZBxHpJQIIXAcB6UUeZ7z48ePj8IC71TAcRxbRqUUWZax3+/JsozlckkQBIRhaI9Ea03XdSilkFKyXq+J45iqqhBCUNc1Sqm5VPMAXNdlvV7bM/727Ru73Y6HhweSJCEMwwmAvu/RWtM0DXVdk2UZm83GHs3xeCTPc4ZhuMv1bg8kScKXL1/Ybrfs93u22y1ZltnSB0FgAQzDgFKKtm0RQrBarSx4x3EQQnA6nWbzzAJQShHHMbvdjufnZ/b7PY+Pj2RZxmq1mgBYLBaTClRVRRzHhGE46Yn3bALA8zziOObx8ZGvX7/y9PRkfa4Cvu+zWCwYhoGu62iaxiY3zdp1HUIIpJScTifqukZrfQ/AcRyiKGK73fL8/GyTGv+oAkopmqaxO4dfzWkmpK5rC3QWAMA4jgRBwGq1Yr1es9lsrJvGuq2A67q2Alrryc77vkdKyWaz4XK5sF6vZ/vAAhiGASEE4zgShiFxHJMkCavVijRNSdOUJElI05Qoiu4AKKUmO2/bljRNiePYHgtA0zTzAIz5vk8URURRxHK5tM/mPQxDoijC932bcBxHHMexO4+iyI7q7W+CIHib7l8t8DyPp6cn0jQlDEPbZHP+VoQWi4XVAc/z7jwIAqsd2+12oik2iuu6dmeu6+I4zqyb797aYrGYuFln3o16Gjq/A9D3PU3ToLWm73vGcWQcR4ZhsM+3/tbMWuN939+9G67o+/4egNaaw+GAlBKtNUoptNZ3bj6/BWGmQCk1613X0XUdVVVxOBzeH8PVamXZyxBL27a0bWtn3My+aTz4Vb2u6+y6W5dS2jhzgmQBeJ5HFEUMw2BFRQiBEIKqqibiY8bOzLwhGEM6VVVZr+uauq5p2xaAMAzt8wTAOI5orRFCUBQF6/X6t8JjeACw5ZdSUlUVZVlSliVFUVCWJZfLhbIskVKyWCy4NQug73uqqrJNZmY/DEM784Zyzedvj8AAKIqCPM8pioLT6cTr6ysvLy+UZTk5/wkA+KWCRVFQFIUlj9tdtm2LlJLlcmln3lTubQXyPOf19ZXD4cDPnz/5/v07czYrx77vI4TgeDwCTNTOULHhC8N+pgJ1XVsAx+OR8/lMVVVzaYB3AIzjSFmWAFyvV9vdQgjiOJ4AuB3Btm0nAIyb++Knb0Raa67XK0IIG1gpxfV6teU3fXErsUaSi6LgeDzaKTJSPGfvXsn6vreMlec5rutyuVwsBxgg5sIxDAOO46C15nw+8/Ly8l7oiX3qWu77Pmma4vs+Ukqu1yv7/Z4wDGmahsPhAPwiMtd1kVJOZv139ikAgJ0GUxXP83Bd13I8YMXnlus/sk8D+Fv26f+Gf8v+AdtQeVVrazXzAAAAAElFTkSuQmCC" />
+                                                                </g>
+                                                        </g>
+                                                </mask>
+                                                <filter id="luminosity-noclip-5" x="62" y="2" width="26" height="26"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-color="#fff" result="bg" />
+                                                        <feBlend in="SourceGraphic" in2="bg" />
+                                                </filter>
+                                                <mask id="mask-5" x="58.55" y="-1.4" width="26" height="26" maskUnits="userSpaceOnUse">
+                                                        <g class="cls-14">
+                                                                <g transform="translate(-3.45 -3.4)">
+                                                                        <image width="26" height="26" transform="translate(62 2)"
+                                                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsSAAALEgHS3X78AAAC2UlEQVRIS71W246kIBA9ooA6Otrd//+FnXgbBbnJPkwg0t0zvQ+bPUlFQOBYVYeSDIDHfwB5N+FfoXg3AQCyLIP3345zzpHnOZxzUEohz3N473Ecx697vCVijOHj4wOUUhRFgbIsQQiBcw77vsNai3VdIaX8dZ+XRIQQZFkG5xy6rsP1ekVd12CMgVIaiZRSEEIgz3NIKX/17omIEIKqqtA0DTjnuF6v6LoOdV2Dcw5KafyIQMQ5B2MMSqno3SPZE1GWZWiaBpfLBX3fo+s6fH5+Jh4BwHEc2PcdQggwxsA5xziO8N5DKfWeyDkHzjm6rsPtdkPf92jbNhIVRYEsy2CthVIKVVWBUhrDFvL2iISIMRZz0vd9tKZpYujyPI8fpLUGYwyEkGRs33fM8wytdfQsEmVZhrqucblcYrjatkXTNGjbFlVVJUQhdISQKABjDJRSUErBWgtjTHQiEnnvwRhDXdeoqipa6IfQnT06e2KMifPKsgSlFM65ZyJKaVRPSHqw0H8MXXiGEAbjnKMsS3DOoZRKicIGwHcYCSEghCDP82hh7LzmbEVRPLUD4iprLbZtg9Ya1locxwHvfbRHnN89vvfewzmXhC4hGoYB27bBGANrLZxzyTO0z+PnvjEmWhBFQCLvsizhvYcxBlprKKXi86fcnOcEC1E5I5E3IQTW2njiQ3kpiiJufm4rpSClxLZtkFJCShnXaa1BCHk+R8GTeZ7jAQ0yDbVNa/1EJITAuq5YlgXLsmCeZ4zjCCFEUoaS0BljMI7jjySvKsO2bVjXFdM0YZomDMOA+/2OR7wsqlJKTNMUNzTGYN/3pKiGWielxLIskSjk86y4l0Tee3x9fcUSExT0WL0DkRAC8zxjGIbYf4UMP1xOQiJvt1vy42OMxeodRDOOI+73+5Myz/iRKIBSmnjDOU/UqbWGECI5M6/wlgh4vpwEb5VSiYR/w18R/Qv8t3vdH9v6XEjYfpv7AAAAAElFTkSuQmCC" />
+                                                                </g>
+                                                        </g>
+                                                </mask>
+                                                <filter id="luminosity-noclip-6" x="84" y="10" width="23" height="23"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-color="#fff" result="bg" />
+                                                        <feBlend in="SourceGraphic" in2="bg" />
+                                                </filter>
+                                                <mask id="mask-6" x="80.55" y="6.6" width="23" height="23" maskUnits="userSpaceOnUse">
+                                                        <g class="cls-13">
+                                                                <g transform="translate(-3.45 -3.4)">
+                                                                        <image width="23" height="23" transform="translate(84 10)"
+                                                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAACXBIWXMAAAsSAAALEgHS3X78AAACKklEQVRIS7WV6W6tIBRGF8jg2NO+/zM2qbEKosL90UBrz9Db3Nwv2YkyLLZ7QAEk/pPkTwv+RT/ClVIopQDQWqO1vhq/p4ezdV3TdR3GGFJKBbzvOwAhBOZ5xnt/c/9NuFKKpmm4XC50XUdd1yilkFIihOA4DvZ9x3tP0zS8vb3hvS+HPoRba3l5eeH5+Zm+72maBq31Cb5tG845rLVIKXl9ff07eNu2PD09neDGGKqqAj7Csm0bxhiklBzHgXOOeZ7vw6WUtG3L5XJhGAb6vmcYBpqmKR5meAgBKSUpJUIIDMOAc45lWYgx3ob3fU/XdbRtezKt9clzpRQpJfZ9p23bssc5V3gn+L7vVFWFtfZkxhiMMSiliDGeDgkhYK0tOTmO4xqeQ5KTp7UutayUKpszOI9XVUVVVWWN1ppt2z6YGS6EKB5mUK4OIQT39Gi+wI/jIKWPayalREqJGCMxxlLX+Tlbfv+6LnsN32KeJ79aCIGqqkry4DPW67qWddk5pVRZd5XQdV3x3uO9L3WcWz8/H8fBuq4454qt6/q4iUIIjONYKkNKSYyxlJ4QonzBtm0sy8I8z7y/vzNNE9M0nQ648nwcx1IBecx7/xA+TRPjOF5dYDfbf55njDHEGFnX9XSvZPi+7yzLwjRNJTTfJbjzJ7LWlntFCEGMsXTltm3EGAs8H/pdd+Hw2Si5iuq6Bihhysm9p4fw78rNcsvLW/oV/Lf68R/6L/oDXtqUro+zOFcAAAAASUVORK5CYII=" />
+                                                                </g>
+                                                        </g>
+                                                </mask>
+                                        </defs>
+                                        <title>logo-horizontal</title>
+                                        <g id="gear_1_shadow">
+                                                <g class="cls-1">
+                                                        <path d="M20.26,13.26c0-.23,0-.45,0-.68s0-.44,0-.67L19,11.84a5.56,5.56,0,0,0-.24-1.16l1.13-.54a7.55,7.55,0,0,0-.52-1.24l-1.18.41a6.47,6.47,0,0,0-.66-1l.84-.94a8.52,8.52,0,0,0-.95-.95l-1,.84a6.66,6.66,0,0,0-1-.65l.42-1.2a8.49,8.49,0,0,0-1.24-.51l-.55,1.15A6.33,6.33,0,0,0,13,5.84l-.08-1.27c-.22,0-.44,0-.67,0s-.45,0-.67,0L11.5,5.84a6.17,6.17,0,0,0-1.15.23L9.79,4.92a9,9,0,0,0-1.24.51L9,6.63a7.92,7.92,0,0,0-1,.65l-.94-.84a8.52,8.52,0,0,0-1,.95l.84.94a6.47,6.47,0,0,0-.66,1L5.09,8.9a7.51,7.51,0,0,0-.51,1.24l1.12.54a7.23,7.23,0,0,0-.24,1.16l-1.23.07c0,.23,0,.45,0,.67s0,.45,0,.68l1.22.07a7.57,7.57,0,0,0,.23,1.17L4.58,15a7.51,7.51,0,0,0,.51,1.24l1.15-.4a6.23,6.23,0,0,0,.67,1l-.81.91a8.52,8.52,0,0,0,1,.95l.9-.8a7.58,7.58,0,0,0,1,.67l-.4,1.14a9,9,0,0,0,1.24.51l.53-1.08a7.71,7.71,0,0,0,1.18.24l.07,1.19c.22,0,.45,0,.67,0s.45,0,.67,0L13,19.41a7.6,7.6,0,0,0,1.19-.24l.52,1.08a8.49,8.49,0,0,0,1.24-.51l-.39-1.14a8.3,8.3,0,0,0,1-.67l.9.8a8.52,8.52,0,0,0,.95-.95l-.81-.91a7,7,0,0,0,.67-1l1.14.4A7.55,7.55,0,0,0,19.91,15L18.8,14.5A6.55,6.55,0,0,0,19,13.33Z"
+                                                                transform="translate(-3.45 -3.4)" />
+                                                </g>
+                                        </g>
+                                        <g id="gear_1">
+                                                <path class="cls-2" d="M19.54,11.84c0-.23,0-.45,0-.67L15.91,11l3.25-1.57a9,9,0,0,0-.51-1.24L15.24,9.34l2.4-2.7a8.52,8.52,0,0,0-.95-.95L14,8.09l1.18-3.4a7.2,7.2,0,0,0-1.24-.52L12.37,7.42l-.2-3.6c-.22,0-.45,0-.67,0s-.45,0-.68,0l-.2,3.6L9.05,4.17a7.55,7.55,0,0,0-1.24.52L9,8.09,6.3,5.69a8.52,8.52,0,0,0-1,.95l2.4,2.7L4.35,8.15a7.93,7.93,0,0,0-.52,1.24L7.08,11l-3.6.21c0,.22,0,.44,0,.67s0,.45,0,.67l3.6.21L3.83,14.29a7.93,7.93,0,0,0,.52,1.24l3.4-1.19L5.35,17a8.52,8.52,0,0,0,1,.95L9,15.58,7.81,19a7.51,7.51,0,0,0,1.24.51l1.57-3.25.2,3.6c.23,0,.45,0,.68,0s.45,0,.67,0l.2-3.6,1.57,3.25A7.17,7.17,0,0,0,15.18,19L14,15.58,16.69,18a8.52,8.52,0,0,0,.95-.95l-2.4-2.69,3.41,1.19a9,9,0,0,0,.51-1.24l-3.25-1.57,3.6-.21C19.53,12.29,19.54,12.06,19.54,11.84Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <circle class="cls-3" cx="8.05" cy="8.47" r="6.83" />
+                                                <circle class="cls-4" cx="8.05" cy="8.47" r="6.02" />
+                                                <circle class="cls-4" cx="8.05" cy="8.47" r="3.21" />
+                                                <circle class="cls-4" cx="8.05" cy="8.47" r="1.61" />
+                                                <line class="cls-5" x1="4.31" y1="3.58" x2="5.06" y2="5.08" />
+                                                <line class="cls-5" x1="4.31" y1="13.29" x2="4.69" y2="12.55" />
+                                                <line class="cls-5" x1="13.65" y1="10.3" x2="13.27" y2="10.3" />
+                                        </g>
+                                        <g id="gear_6_shadow">
+                                                <g class="cls-6">
+                                                        <path d="M121.07,17.74c0-.22,0-.45,0-.67s0-.45,0-.68l-1.24-.07a5.56,5.56,0,0,0-.24-1.16l1.13-.54a7.55,7.55,0,0,0-.52-1.24l-1.18.41a6.47,6.47,0,0,0-.66-1l.84-.94a8.52,8.52,0,0,0-1-.95l-1,.84a6.66,6.66,0,0,0-1-.65l.42-1.19a7.55,7.55,0,0,0-1.24-.52L115,10.55a6.51,6.51,0,0,0-1.15-.23l-.08-1.27c-.22,0-.44,0-.67,0s-.45,0-.67,0l-.07,1.27a6.17,6.17,0,0,0-1.15.23L110.6,9.4a7.93,7.93,0,0,0-1.24.52l.42,1.19a7.24,7.24,0,0,0-1,.65l-.94-.84a8.52,8.52,0,0,0-1,.95l.84.94a6.47,6.47,0,0,0-.66,1l-1.19-.41a7.51,7.51,0,0,0-.51,1.24l1.12.54a7.23,7.23,0,0,0-.24,1.16l-1.23.07c0,.23,0,.45,0,.68s0,.45,0,.67l1.22.07a7.57,7.57,0,0,0,.23,1.17l-1.1.53a7.51,7.51,0,0,0,.51,1.24l1.15-.4a6.23,6.23,0,0,0,.67,1l-.81.91a8.52,8.52,0,0,0,1,.95l.9-.8a7.58,7.58,0,0,0,1,.67l-.4,1.14a9,9,0,0,0,1.24.51l.53-1.08a7.47,7.47,0,0,0,1.18.24l.07,1.19c.22,0,.45,0,.67,0s.45,0,.67,0l.07-1.19a7.84,7.84,0,0,0,1.19-.24l.52,1.08a8.49,8.49,0,0,0,1.24-.51l-.39-1.14a8.3,8.3,0,0,0,1-.67l.9.8a8.52,8.52,0,0,0,1-.95l-.81-.91a7,7,0,0,0,.67-1l1.14.4a7.55,7.55,0,0,0,.52-1.24L119.61,19a6.55,6.55,0,0,0,.23-1.17Z"
+                                                                transform="translate(-3.45 -3.4)" />
+                                                </g>
+                                        </g>
+                                        <g id="gear_6">
+                                                <path class="cls-2" d="M120.35,16.32c0-.23,0-.45,0-.67l-3.6-.21L120,13.87a9,9,0,0,0-.51-1.24l-3.41,1.19,2.4-2.7a7.67,7.67,0,0,0-1-.94l-2.69,2.39L116,9.17a7.55,7.55,0,0,0-1.24-.52l-1.57,3.25L113,8.3c-.22,0-.45,0-.67,0s-.45,0-.68,0l-.2,3.6-1.57-3.25a7.55,7.55,0,0,0-1.24.52l1.18,3.4-2.69-2.39a7.67,7.67,0,0,0-1,.94l2.4,2.7-3.4-1.19a7.93,7.93,0,0,0-.52,1.24l3.25,1.57-3.6.21c0,.22,0,.44,0,.67s0,.45,0,.67l3.6.21-3.25,1.57a7.93,7.93,0,0,0,.52,1.24l3.4-1.19-2.4,2.69a8.52,8.52,0,0,0,1,.95l2.69-2.4-1.18,3.41a7.51,7.51,0,0,0,1.24.51l1.57-3.24.2,3.59c.23,0,.45,0,.68,0s.45,0,.67,0l.2-3.59L114.75,24a7.51,7.51,0,0,0,1.24-.51l-1.18-3.41,2.69,2.4a8.52,8.52,0,0,0,1-.95l-2.4-2.69L119.46,20a9,9,0,0,0,.51-1.24l-3.25-1.57,3.6-.21C120.34,16.77,120.35,16.54,120.35,16.32Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <circle class="cls-3" cx="108.86" cy="12.95" r="6.83" />
+                                                <circle class="cls-4" cx="108.86" cy="12.95" r="6.02" />
+                                                <circle class="cls-4" cx="108.86" cy="12.95" r="3.21" />
+                                                <circle class="cls-4" cx="108.86" cy="12.95" r="1.61" />
+                                                <line class="cls-5" x1="105.12" y1="8.06" x2="105.87" y2="9.56" />
+                                                <line class="cls-5" x1="105.12" y1="17.77" x2="105.5" y2="17.03" />
+                                                <line class="cls-5" x1="114.46" y1="14.79" x2="114.08" y2="14.79" />
+                                        </g>
+                                        <g id="gear_2_shadow">
+                                                <g class="cls-7">
+                                                        <path d="M36.82,20.32q0-.42,0-.84t0-.84l-1.55-.09a8.79,8.79,0,0,0-.3-1.46l1.41-.68a11,11,0,0,0-.65-1.55l-1.48.52a9.07,9.07,0,0,0-.82-1.23l1-1.17a11,11,0,0,0-1.18-1.19l-1.18,1.05A10,10,0,0,0,30.88,12l.52-1.5a10.09,10.09,0,0,0-1.55-.64l-.69,1.43A8.53,8.53,0,0,0,27.72,11l-.09-1.59c-.28,0-.56,0-.84,0s-.56,0-.84,0L25.86,11a8.53,8.53,0,0,0-1.44.28l-.69-1.43a10.09,10.09,0,0,0-1.55.64L22.7,12a10,10,0,0,0-1.23.81l-1.18-1.05A11,11,0,0,0,19.11,13l1,1.17a9.07,9.07,0,0,0-.82,1.23l-1.48-.52a11,11,0,0,0-.65,1.55l1.41.68a8.79,8.79,0,0,0-.3,1.46l-1.54.09a7.63,7.63,0,0,0,0,.84,7.87,7.87,0,0,0,0,.84l1.53.08a8.69,8.69,0,0,0,.28,1.47l-1.38.67a10.13,10.13,0,0,0,.65,1.55l1.43-.5a8.75,8.75,0,0,0,.83,1.25l-1,1.13a10.2,10.2,0,0,0,1.18,1.19l1.13-1a8.81,8.81,0,0,0,1.25.84l-.49,1.42a10.09,10.09,0,0,0,1.55.64l.65-1.35a9,9,0,0,0,1.48.3L26,29.5c.28,0,.56,0,.84,0s.56,0,.84,0L27.72,28a9,9,0,0,0,1.48-.3l.65,1.35a10.09,10.09,0,0,0,1.55-.64L30.91,27a8.81,8.81,0,0,0,1.25-.84l1.13,1A10.2,10.2,0,0,0,34.47,26l-1-1.13a8.75,8.75,0,0,0,.83-1.25l1.43.5a10.13,10.13,0,0,0,.65-1.55L35,21.87a8.69,8.69,0,0,0,.28-1.47Z"
+                                                                transform="translate(-3.45 -3.4)" />
+                                                </g>
+                                        </g>
+                                        <g id="gear_3_shadow">
+                                                <g class="cls-8">
+                                                        <path d="M65.21,19.53c0-.38.05-.75.05-1.14s0-.76-.05-1.13l-2.09-.12a11.66,11.66,0,0,0-.4-2l1.9-.92a14.17,14.17,0,0,0-.87-2.09l-2,.69a12.28,12.28,0,0,0-1.12-1.65L62,9.61A13.43,13.43,0,0,0,60.44,8l-1.6,1.42a10.82,10.82,0,0,0-1.65-1.11l.7-2a14.17,14.17,0,0,0-2.09-.87l-.94,1.94a11.41,11.41,0,0,0-2-.39l-.12-2.14c-.37,0-.75,0-1.13,0s-.77,0-1.14,0L50.4,7a11.41,11.41,0,0,0-1.95.39l-.94-1.94a14.17,14.17,0,0,0-2.09.87l.7,2a10.82,10.82,0,0,0-1.65,1.11L42.87,8a13.43,13.43,0,0,0-1.6,1.6l1.41,1.59a12.28,12.28,0,0,0-1.12,1.65l-2-.69a15.34,15.34,0,0,0-.87,2.09l1.9.92a11.66,11.66,0,0,0-.4,2l-2.09.12c0,.37-.05.75-.05,1.13s0,.76.05,1.14l2.07.12a11.76,11.76,0,0,0,.39,2l-1.87.9a15,15,0,0,0,.87,2.1L41.5,24a12.76,12.76,0,0,0,1.13,1.69l-1.36,1.53a13.43,13.43,0,0,0,1.6,1.6l1.52-1.35a12.3,12.3,0,0,0,1.7,1.14l-.67,1.92a15.34,15.34,0,0,0,2.09.87l.89-1.83a11.25,11.25,0,0,0,2,.4l.12,2c.37,0,.75.05,1.14.05s.76,0,1.13-.05l.12-2a10.9,10.9,0,0,0,2-.4l.89,1.83a15.34,15.34,0,0,0,2.09-.87l-.67-1.92a12.3,12.3,0,0,0,1.7-1.14l1.52,1.35a13.43,13.43,0,0,0,1.6-1.6l-1.36-1.53A12.76,12.76,0,0,0,61.81,24l1.94.67a13.85,13.85,0,0,0,.87-2.1l-1.87-.9a10.84,10.84,0,0,0,.39-2Z"
+                                                                transform="translate(-3.45 -3.4)" />
+                                                </g>
+                                        </g>
+                                        <g id="gear_2">
+                                                <path class="cls-2" d="M36.1,18.91a7.87,7.87,0,0,0,0-.84l-4.5-.26,4.07-2A10.57,10.57,0,0,0,35,14.3l-4.26,1.48,3-3.36a9.56,9.56,0,0,0-1.19-1.19l-3.36,3L30.65,10a10.09,10.09,0,0,0-1.55-.64l-2,4.06-.26-4.5c-.28,0-.56,0-.84,0s-.56,0-.84,0l-.26,4.5L23,9.33a10.09,10.09,0,0,0-1.55.64l1.48,4.26-3.37-3a10.2,10.2,0,0,0-1.18,1.19l3,3.36L17.1,14.3a9.58,9.58,0,0,0-.65,1.55l4.07,2L16,18.07q0,.42,0,.84t0,.84l4.51.26-4.07,2a10,10,0,0,0,.65,1.55L21.36,22l-3,3.37a11,11,0,0,0,1.18,1.19l3.37-3-1.48,4.26A10.09,10.09,0,0,0,23,28.5l2-4.06.26,4.5c.28,0,.56,0,.84,0s.56,0,.84,0l.26-4.5,2,4.06a10.09,10.09,0,0,0,1.55-.64L29.17,23.6l3.36,3a10.29,10.29,0,0,0,1.19-1.19l-3-3.37L35,23.53A11,11,0,0,0,35.63,22l-4.07-2,4.5-.26A7.63,7.63,0,0,0,36.1,18.91Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <circle class="cls-3" cx="22.59" cy="15.56" r="8.54" />
+                                                <circle class="cls-4" cx="22.59" cy="15.56" r="7.53" />
+                                                <circle class="cls-4" cx="22.59" cy="15.56" r="4.02" />
+                                                <circle class="cls-4" cx="22.59" cy="15.56" r="2.01" />
+                                                <line class="cls-5" x1="26.53" y1="13.87" x2="29.54" y2="12.56" />
+                                                <line class="cls-5" x1="17.61" y1="21.28" x2="18.93" y2="20.72" />
+                                                <line class="cls-5" x1="16.86" y1="10.58" x2="18.37" y2="11.52" />
+                                                <line class="cls-5" x1="25.69" y1="18.09" x2="26.81" y2="19.03" />
+                                        </g>
+                                        <g id="gear_3">
+                                                <path class="cls-2" d="M64.25,17.38a10.88,10.88,0,0,0-.06-1.14l-6.08-.35,5.49-2.65a12.89,12.89,0,0,0-.87-2.1l-5.76,2L61,8.6A13.6,13.6,0,0,0,59.42,7l-4.55,4.06,2-5.76a12.89,12.89,0,0,0-2.1-.87L52.13,9.91l-.35-6.09c-.38,0-.76,0-1.14,0s-.76,0-1.14,0l-.35,6.09L46.5,4.42a12.89,12.89,0,0,0-2.1.87l2,5.76L41.86,7A13.6,13.6,0,0,0,40.25,8.6l4.06,4.55-5.76-2a12.89,12.89,0,0,0-.87,2.1l5.49,2.65-6.08.35A10.88,10.88,0,0,0,37,17.38a10.55,10.55,0,0,0,.06,1.13l6.08.35-5.49,2.66a12.89,12.89,0,0,0,.87,2.1l5.76-2-4.06,4.55a13.6,13.6,0,0,0,1.61,1.61l4.55-4.06-2,5.76a12.89,12.89,0,0,0,2.1.87l2.65-5.49.35,6.08c.38,0,.76.05,1.14.05s.76,0,1.14-.05l.35-6.08,2.65,5.49a12.89,12.89,0,0,0,2.1-.87l-2-5.76,4.55,4.06A13.6,13.6,0,0,0,61,26.16L57,21.61l5.76,2a12.89,12.89,0,0,0,.87-2.1l-5.49-2.66,6.08-.35A10.55,10.55,0,0,0,64.25,17.38Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <circle class="cls-3" cx="47.19" cy="14.04" r="11.54" />
+                                                <circle class="cls-4" cx="47.19" cy="14.04" r="10.19" />
+                                                <circle class="cls-4" cx="47.19" cy="14.04" r="5.43" />
+                                                <circle class="cls-4" cx="47.19" cy="14.04" r="2.72" />
+                                                <line class="cls-5" x1="53.92" y1="23.56" x2="53.16" y2="22.29" />
+                                        </g>
+                                        <g id="gear_4_shadow">
+                                                <g class="cls-9">
+                                                        <path d="M85.76,15.82c0-.29,0-.59,0-.89s0-.6,0-.9l-1.65-.09a9,9,0,0,0-.32-1.56l1.5-.72A10.85,10.85,0,0,0,84.6,10L83,10.56a9.67,9.67,0,0,0-.88-1.31L83.26,8A10.8,10.8,0,0,0,82,6.74L80.74,7.86A8.76,8.76,0,0,0,79.43,7L80,5.39a10.51,10.51,0,0,0-1.66-.68L77.6,6.23a9.75,9.75,0,0,0-1.54-.3L76,4.24c-.3,0-.6,0-.9,0s-.6,0-.89,0l-.1,1.69a9.75,9.75,0,0,0-1.54.3l-.73-1.52a10.51,10.51,0,0,0-1.66.68L70.71,7a8.76,8.76,0,0,0-1.31.87L68.15,6.74A10.8,10.8,0,0,0,66.88,8L68,9.25a9.74,9.74,0,0,0-.89,1.31L65.54,10a10.85,10.85,0,0,0-.69,1.65l1.5.72A9,9,0,0,0,66,13.94L64.38,14c0,.3,0,.59,0,.9s0,.6,0,.89l1.64.1a9.15,9.15,0,0,0,.3,1.56l-1.47.71a10.44,10.44,0,0,0,.69,1.65l1.53-.53A8.51,8.51,0,0,0,68,20.64l-1.07,1.21a10.88,10.88,0,0,0,1.27,1.27l1.2-1.07a9.4,9.4,0,0,0,1.33.9l-.53,1.51a11.59,11.59,0,0,0,1.66.69l.69-1.44a10.27,10.27,0,0,0,1.58.31l.1,1.59a8.7,8.7,0,0,0,.89,0c.3,0,.6,0,.9,0L76.06,24a10.27,10.27,0,0,0,1.58-.31l.69,1.44A11.59,11.59,0,0,0,80,24.46L79.46,23a9.4,9.4,0,0,0,1.33-.9L82,23.12a10.88,10.88,0,0,0,1.27-1.27l-1.07-1.21a8.51,8.51,0,0,0,.88-1.33l1.53.53a10.44,10.44,0,0,0,.69-1.65l-1.47-.71a9.15,9.15,0,0,0,.3-1.56Z"
+                                                                transform="translate(-3.45 -3.4)" />
+                                                </g>
+                                        </g>
+                                        <g id="gear_4">
+                                                <path class="cls-2" d="M85,14.13c0-.31,0-.6,0-.9L80.16,13l4.33-2.09a10.85,10.85,0,0,0-.69-1.65l-4.54,1.58,3.2-3.59a10.8,10.8,0,0,0-1.27-1.26L77.61,9.13l1.58-4.54a10.51,10.51,0,0,0-1.66-.68L75.44,8.24l-.28-4.8c-.29,0-.59,0-.89,0s-.6,0-.9,0l-.27,4.8L71,3.91a10.51,10.51,0,0,0-1.66.68l1.58,4.54L67.35,5.94A10.8,10.8,0,0,0,66.08,7.2l3.2,3.59L64.74,9.21a10.85,10.85,0,0,0-.69,1.65L68.38,13l-4.8.28c0,.3,0,.59,0,.9s0,.6,0,.89l4.8.28-4.33,2.09A10.44,10.44,0,0,0,64.74,19l4.54-1.58-3.2,3.59a10.88,10.88,0,0,0,1.27,1.27l3.58-3.2-1.58,4.54a10.51,10.51,0,0,0,1.66.68L73.1,20l.27,4.8c.3,0,.6,0,.9,0a8.7,8.7,0,0,0,.89,0l.28-4.8,2.09,4.33a10.51,10.51,0,0,0,1.66-.68l-1.58-4.54,3.58,3.2a10.88,10.88,0,0,0,1.27-1.27l-3.2-3.59L83.8,19a10.44,10.44,0,0,0,.69-1.65L80.16,15.3,85,15C85,14.73,85,14.43,85,14.13Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <circle class="cls-3" cx="70.82" cy="10.77" r="9.1" />
+                                                <circle class="cls-4" cx="70.82" cy="10.77" r="8.03" />
+                                                <circle class="cls-4" cx="70.82" cy="10.77" r="4.28" />
+                                                <circle class="cls-4" cx="70.82" cy="10.77" r="2.14" />
+                                                <line class="cls-5" x1="76.12" y1="18.28" x2="75.52" y2="17.28" />
+                                        </g>
+                                        <g id="gear_5_shadow">
+                                                <g class="cls-10">
+                                                        <path d="M104.8,22a6,6,0,0,0,0-.74,6.28,6.28,0,0,0,0-.75l-1.37-.08a7,7,0,0,0-.26-1.29l1.25-.6a9.35,9.35,0,0,0-.58-1.38l-1.31.46a7.3,7.3,0,0,0-.73-1.08l.93-1a8.76,8.76,0,0,0-1.06-1l-1,.93a7.34,7.34,0,0,0-1.09-.72l.46-1.33a9.19,9.19,0,0,0-1.37-.57L98,14a7.51,7.51,0,0,0-1.27-.25l-.08-1.41q-.37,0-.75,0c-.25,0-.5,0-.74,0l-.08,1.41a7.63,7.63,0,0,0-1.28.25L93.2,12.7a9.31,9.31,0,0,0-1.38.57l.46,1.33a7.8,7.8,0,0,0-1.08.72l-1-.93a8.68,8.68,0,0,0-1.05,1l.92,1a7.3,7.3,0,0,0-.73,1.08L88,17.11a8.35,8.35,0,0,0-.57,1.38l1.24.6a8,8,0,0,0-.26,1.29L87,20.46q0,.38,0,.75c0,.25,0,.5,0,.74l1.36.08a7,7,0,0,0,.25,1.3l-1.22.59A8.35,8.35,0,0,0,88,25.3l1.27-.44A7.39,7.39,0,0,0,90,26l-.89,1A8.68,8.68,0,0,0,90.15,28l1-.89a7.71,7.71,0,0,0,1.11.75l-.44,1.26a8.35,8.35,0,0,0,1.38.57l.57-1.2a7.36,7.36,0,0,0,1.32.27l.08,1.32c.24,0,.49,0,.74,0s.5,0,.75,0l.07-1.32a7.36,7.36,0,0,0,1.32-.27l.58,1.2a8.24,8.24,0,0,0,1.37-.57l-.43-1.26a8.31,8.31,0,0,0,1.11-.75l1,.89A8.76,8.76,0,0,0,102.73,27l-.9-1a7.39,7.39,0,0,0,.74-1.11l1.27.44a9.35,9.35,0,0,0,.58-1.38l-1.23-.59a7,7,0,0,0,.25-1.3Z"
+                                                                transform="translate(-3.45 -3.4)" />
+                                                </g>
+                                        </g>
+                                        <g id="gear_5">
+                                                <path class="cls-2" d="M104.17,20.57c0-.25,0-.5,0-.74l-4-.25,3.61-1.73a8.61,8.61,0,0,0-.57-1.37l-3.78,1.3,2.67-3a8.68,8.68,0,0,0-1-1.05L98,16.4l1.33-3.78A8.35,8.35,0,0,0,98,12.05l-1.75,3.59-.22-4-.74,0-.75,0-.24,4L92.56,12a9.27,9.27,0,0,0-1.38.56l1.3,3.79-3-2.68a9.56,9.56,0,0,0-1.06,1.05l2.65,3-3.77-1.33a9.7,9.7,0,0,0-.58,1.37l3.6,1.76-4,.21a6.28,6.28,0,0,0,0,.75c0,.25,0,.5,0,.74l4,.25-3.61,1.73a8.61,8.61,0,0,0,.57,1.37l3.78-1.3-2.67,3a9.55,9.55,0,0,0,1,1.06l3-2.66-1.33,3.78A7.9,7.9,0,0,0,92.5,29l1.75-3.59.22,4c.24,0,.49,0,.74,0s.5,0,.75,0l.24-4,1.73,3.61a9.27,9.27,0,0,0,1.38-.56L98,24.7l3,2.68A8.76,8.76,0,0,0,102,26.33l-2.65-3,3.77,1.33a8.66,8.66,0,0,0,.58-1.37l-3.6-1.76,4-.21Q104.17,20.95,104.17,20.57Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <circle class="cls-3" cx="91.8" cy="17.18" r="7.57" />
+                                                <circle class="cls-4" cx="91.8" cy="17.18" r="6.68" />
+                                                <circle class="cls-4" cx="91.8" cy="17.18" r="3.56" />
+                                                <circle class="cls-4" cx="91.8" cy="17.18" r="1.78" />
+                                                <line class="cls-5" x1="96.19" y1="23.44" x2="95.69" y2="22.61" />
+                                        </g>
+                                        <rect id="box" class="cls-11" x="5.55" y="6.6" width="105" height="14" rx="2.59" />
+                                        <g id="text">
+                                                <path class="cls-12" d="M16.58,22H14a2.28,2.28,0,0,1-2.41-2.29V14.4A2.28,2.28,0,0,1,14,12.11h2.65A2.33,2.33,0,0,1,19,14.5v.6H17.26v-.75a.63.63,0,0,0-.59-.63H13.88a.64.64,0,0,0-.6.63v5.39a.64.64,0,0,0,.6.63h2.79a.63.63,0,0,0,.59-.63V19H19v.7A2.28,2.28,0,0,1,16.58,22Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M27.43,22V17.83h-4V22H21.72V12.11h1.73V16.2h4V12.11h1.73V22Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M37.52,22V18.67c0-.63-.15-.82-.69-.82H33.56V22H31.88V12.11h5a2.28,2.28,0,0,1,2.42,2.29v1.07A2,2,0,0,1,38.6,17a1.69,1.69,0,0,1,.66,1.43V22Zm0-7.68a.68.68,0,0,0-.59-.68H33.56v2.62h3.18c.63,0,.78-.17.78-.77Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M42,22V20.42h1.43V13.65H42V12.11h4.59v1.54H45.12v6.77h1.45V22Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M54.15,22H51.53a2.28,2.28,0,0,1-2.41-2.3v-.63h1.7v.72a.63.63,0,0,0,.59.63h2.86a.63.63,0,0,0,.59-.63V18.51c0-1-2-.66-3.26-.69a2.32,2.32,0,0,1-2.41-2.32V14.4a2.28,2.28,0,0,1,2.41-2.29H54a2.28,2.28,0,0,1,2.42,2.29v.65h-1.7v-.74a.63.63,0,0,0-.6-.62H51.48a.63.63,0,0,0-.59.62v1.3c0,1,2,.66,3.26.68a2.32,2.32,0,0,1,2.41,2.31v1.1A2.28,2.28,0,0,1,54.15,22Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M65.06,22V12.11h1.77v8.27h4.42V22Z" transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M79.34,16.32l-2.17,2.16V22H75.43V18.48l-2.17-2.16a1.87,1.87,0,0,1-.65-1.58V12.11h1.7v2.56c0,.36,0,.41.22.61l1.75,1.79,1.77-1.79c.22-.2.22-.25.22-.61V12.11H80v2.63A1.87,1.87,0,0,1,79.34,16.32Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M88.39,22V19l-4-4.11V22H82.71V12.11h1.46l4.22,4.43V12.11h1.73V22Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M100.32,22H98.6V18.85h-4V22H92.84V16a1.93,1.93,0,0,1,.65-1.63l2.34-2.22h1.5l2.35,2.22a2,2,0,0,1,.64,1.63ZM98.6,16.05c0-.36,0-.44-.22-.65l-1.82-1.8c-.08.14-1.78,1.8-1.78,1.8-.2.21-.22.29-.22.65v1.31h4Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                                <path class="cls-12" d="M109.43,22v-7L107.63,17h-1l-1.8-2.07v7H103V12.11h1.41l2.71,3.14c.06-.2,2.6-3.14,2.6-3.14h1.41V22Z"
+                                                        transform="translate(-3.45 -3.4)" />
+                                        </g>
+                                </svg>
+                        </figure>
+
+                        <a role="
+                                                                button" class="navbar-burger burger"
+                                aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                        </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-start">
+                                <a class="navbar-item">
+                                        Home
+                                </a>
+
+                                <a class="navbar-item">
+                                        Documentation
+                                </a>
+
+                                <div class="navbar-item has-dropdown is-hoverable">
+                                        <a class="navbar-link">
+                                                More
+                                        </a>
+
+                                        <div class="navbar-dropdown">
+                                                <a class="navbar-item">
+                                                        About
+                                                </a>
+                                                <a class="navbar-item">
+                                                        Jobs
+                                                </a>
+                                                <a class="navbar-item">
+                                                        Contact
+                                                </a>
+                                                <hr class="navbar-divider">
+                                                <a class="navbar-item">
+                                                        Report an issue
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="navbar-end">
+                                <div class="navbar-item">
+                                        <div class="buttons">
+                                                <a class="button is-primary">
+                                                        <strong>Sign up</strong>
+                                                </a>
+                                                <a class="button is-light">
+                                                        Log in
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </nav>
+        <section class="section">
+                <div class="container">
+                        <h1 class="title">
+                                Hello World
+                        </h1>
+                        <p class="subtitle">
+                                My first website with <strong>Bulma</strong>!
+                        </p>
+                </div>
+        </section>
+        <footer class="footer">
+                <div class="content has-text-centered">
+                        <p>
+                                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source
+                                code is licensed
+                                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                        </p>
+                </div>
+        </footer>
+</body>
+
+</html>
