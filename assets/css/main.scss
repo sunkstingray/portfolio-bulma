@@ -2,8 +2,11 @@
 
 $navbar-background-color: #fff4de;
 $footer-background-color: #fff4de;
+$footer-height: 50px;
 
 @import "../../node_modules/bulma/bulma.sass";
+
+@import "../../node_modules/bulma-carousel/dist/css/bulma-carousel.sass";
 
 // non-Bulma sass variables
 
@@ -35,11 +38,11 @@ $text: #4C3434;
       @function getSpeed($speed) {
         $secs: 200;
         @if $speed == fastest {
-          $secs: 12;
+          $secs: 10;
         } @else if $speed == really-fast {
           $secs: 20;
         } @else if $speed == fast {
-          $secs: 30;
+          $secs: 40;
         } @else if $speed == slow {
           $secs: 60;
         } @else if $speed == really-slow {
@@ -86,13 +89,40 @@ $text: #4C3434;
         @include rotate(51.6px, 18.4px, right, fast);
 }
 
+#gear_4 {
+        @include rotate(74.3px, 14.1px, left, really-fast);
+}
+
+#gear_4_shadow {
+        @include rotate(75.1px, 14.9px, left, really-fast);
+}
+
+#gear_5 {
+        @include rotate(95.2px, 20.5px, right, really-fast);
+}
+
+#gear_5_shadow {
+        @include rotate(95.9px, 21.2px, right, really-fast);
+}
+
+#gear_6 {
+        @include rotate(112.3px, 16.3px, left, fastest);
+}
+
+#gear_6_shadow {
+        @include rotate(113px, 17.1px, left, fastest);
+}
 
 // General CSS
 
 #logo {
-        height: 35px;
+        height: 45px;
         padding: 0;
         overflow: visible;
+}
+
+.logo-image {
+        padding: 0 .75rem;
 }
 
 .cls-1 {

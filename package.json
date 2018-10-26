@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/sunkstingray/portfolio-bulma#readme",
   "dependencies": {
-    "bulma": "^0.7.2"
+    "bulma": "^0.7.2",
+    "bulma-carousel": "^3.0.0",
+    "underscore": "^1.9.1"
   }
 }
