@@ -348,7 +348,7 @@ pre {
 }
 
 body {
-  color: #4a4a4a;
+  color: #18291f;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -411,7 +411,7 @@ strong {
 pre {
   -webkit-overflow-scrolling: touch;
   background-color: whitesmoke;
-  color: #4a4a4a;
+  color: #18291f;
   font-size: 0.875em;
   overflow-x: auto;
   padding: 1.25rem 1.5rem;
@@ -1561,7 +1561,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   border-radius: 6px;
   -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
           box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  color: #4a4a4a;
+  color: #18291f;
   display: block;
   padding: 1.25rem;
 }
@@ -1640,7 +1640,7 @@ a.box:active {
 .button.is-text {
   background-color: transparent;
   border-color: transparent;
-  color: #4a4a4a;
+  color: #18291f;
   text-decoration: underline;
 }
 
@@ -4807,15 +4807,15 @@ a.box:active {
 }
 
 .progress::-webkit-progress-value {
-  background-color: #4a4a4a;
+  background-color: #18291f;
 }
 
 .progress::-moz-progress-bar {
-  background-color: #4a4a4a;
+  background-color: #18291f;
 }
 
 .progress::-ms-fill {
-  background-color: #4a4a4a;
+  background-color: #18291f;
   border: none;
 }
 
@@ -5208,7 +5208,7 @@ a.box:active {
           align-items: center;
   background-color: whitesmoke;
   border-radius: 4px;
-  color: #4a4a4a;
+  color: #18291f;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -5623,7 +5623,7 @@ a.tag:hover {
   background-color: white;
   -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
           box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  color: #4a4a4a;
+  color: #18291f;
   max-width: 100%;
   position: relative;
 }
@@ -5971,7 +5971,7 @@ button.dropdown-item.is-active {
 }
 
 .list-item:not(a) {
-  color: #4a4a4a;
+  color: #18291f;
 }
 
 .list-item:first-child {
@@ -6102,7 +6102,7 @@ a.list-item {
 
 .menu-list a {
   border-radius: 2px;
-  color: #4a4a4a;
+  color: #18291f;
   display: block;
   padding: 0.5em 0.75em;
 }
@@ -6309,7 +6309,7 @@ a.list-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #4a4a4a;
+  background-color: #18291f;
   border-radius: 4px 4px 0 0;
   color: #fff;
   display: -webkit-box;
@@ -6344,7 +6344,7 @@ a.list-item {
   border-radius: 4px;
   border-style: solid;
   border-width: 0 0 0 4px;
-  color: #4a4a4a;
+  color: #18291f;
   padding: 1.25em 1.5em;
 }
 
@@ -6482,7 +6482,7 @@ a.list-item {
 }
 
 .navbar {
-  background-color: #fff4de;
+  background-color: #fdf9ef;
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -7129,7 +7129,7 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger {
-  color: #4a4a4a;
+  color: #18291f;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -7193,7 +7193,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #4a4a4a;
+  color: #18291f;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
@@ -7317,7 +7317,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
     display: none;
   }
   .navbar-menu {
-    background-color: #fff4de;
+    background-color: #fdf9ef;
     -webkit-box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
             box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
@@ -7835,7 +7835,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
 }
 
 .panel-list a {
-  color: #4a4a4a;
+  color: #18291f;
 }
 
 .panel-list a:hover {
@@ -7934,7 +7934,7 @@ label.panel-block:hover {
   border-bottom-color: #dbdbdb;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  color: #4a4a4a;
+  color: #18291f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11357,7 +11357,7 @@ label.panel-block:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #4a4a4a;
+  color: #18291f;
   position: absolute;
   left: 0;
 }
@@ -11511,7 +11511,7 @@ label.panel-block:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #4a4a4a;
+  color: #18291f;
   position: absolute;
   left: 0;
 }
@@ -11685,7 +11685,7 @@ label.panel-block:hover {
 .cls-3,
 .cls-4,
 .cls-5 {
-  stroke: #235e33;
+  stroke: #18291f;
   stroke-miterlimit: 10;
 }
 
@@ -11729,8 +11729,7 @@ label.panel-block:hover {
 }
 
 .cls-11 {
-  fill: #425a64;
-  opacity: 0.88;
+  fill: #2d4637;
 }
 
 .cls-12 {
