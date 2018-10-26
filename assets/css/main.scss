@@ -1,10 +1,15 @@
 @charset "utf-8";
 
-$navbar-background-color: #fdf9ef;
+$navbar-background-color: #d8d3c7;
 $footer-background-color: #fff4de;
-$footer-height: 50px;
+$body-background-color: #2f3d32;
+$footer-height: 20px;
 $text: #18291f;
 $navbar-item-color: #18291f;
+$link: #b62121;
+$hr-background-color: #dabebe;
+$hr-height: 1px;
+$hr-margin: 0 0 .5rem 0;
 
 @import "../../node_modules/bulma/bulma.sass";
 
@@ -15,6 +20,7 @@ $navbar-item-color: #18291f;
 $gear: #85ab8f;
 $text: #4C3434;
 $box-color: #18291f;
+$light: #d8d3c7;
 // $box-color: #2d4637;
 // $text: #ed1c24;
 
@@ -119,6 +125,32 @@ $box-color: #18291f;
 
 // General CSS
 
+body {
+        background-image: url("../images/gear-background.gif");
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        padding-bottom: 0;
+        height: 100vh;
+}
+
+.content h5 {
+        margin-bottom: 0.4em;
+    }
+
+.tag:not(body) {
+        font-size: .7rem;
+        height: 1.75em;
+}
+
+// a .navbar-item :hover{
+//         color: #b62121;
+// }
+
+.carousel-nav-right, .carousel-nav-left {
+        color: $light;
+}
+
 #logo {
         height: 45px;
         padding: 0;
@@ -127,6 +159,14 @@ $box-color: #18291f;
 
 .logo-image {
         padding: 0 .75rem;
+}
+
+.headshot {
+        margin: 0 2rem 1rem 0;
+}
+
+.footer {
+        padding: 1.5rem;
 }
 
 .cls-1 {

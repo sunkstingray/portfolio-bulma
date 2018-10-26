@@ -199,7 +199,7 @@
 
                 <div id="navbar-portfolio" class="navbar-menu">
                         <div class="navbar-end">
-                                <a class="navbar-item">
+                                <a class="navbar-item" id="about-me">
                                         <span class="icon">
                                                 <i class="fa fa-user" aria-hidden="true"></i>
                                         </span>
@@ -223,16 +223,133 @@
                 </div>
         </nav>
 
+        <!-- About Me Modal -->
+
+        <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                        <header class="modal-card-head">
+                                <p class="modal-card-title">About Me</p>
+                                <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                                <figure class="image is-128x128 is-pulled-left headshot">
+                                        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                                </figure>
+                                <p>That's what painting is all about. It should make you feel good when you paint. When
+                                        you buy that first tube of paint it gives you an artist license. Give him a
+                                        friend, we forget the trees get lonely too. Even trees need a friend. We all
+                                        need friends. We'll make some happy little bushes here.
+
+                                        We can always carry this a step further. There's really no end to this. Let's
+                                        have a happy little tree in here. What the devil. If it's not what you want -
+                                        stop and change it. Don't just keep going and expect it will get better.
+
+                                        We can fix anything. A tree needs to be your friend if you're going to paint
+                                        him. You can bend rivers. But when I get home, the only thing I have power over
+                                        is the garbage. Just use the old one inch brush. Sometimes you learn more from
+                                        your mistakes than you do from your masterpieces. This piece of canvas is your
+                                        world.
+
+                                        If you hypnotize it, it will go away. You have freedom here. The only guide is
+                                        your heart. A big strong tree needs big strong roots. Without washing the
+                                        brush, I'm gonna go right into some Van Dyke Brown, some Burnt Umber, and a
+                                        little bit of Sap Green. If what you're doing doesn't make you happy - you're
+                                        doing the wrong thing. Let's make some happy little clouds in our world.
+
+                                        I spend a lot of time walking around in the woods and talking to trees, and
+                                        squirrels, and little rabbits and stuff. We artists are a different breed of
+                                        people. We're a happy bunch. You can do it.
+
+                                        It takes dark in order to show light. We'll take a little bit of Van Dyke
+                                        Brown. Let's get wild today. Remember how free clouds are. They just lay around
+                                        in the sky all day long. Don't forget to tell these special people in your life
+                                        just how special they are to you.
+
+                                        Just a little indication. Maybe there's a happy little bush that lives right
+                                        there. Anytime you learn something your time and energy are not wasted. Look at
+                                        them little rascals.
+
+                                </p>
+                        </section>
+                </div>
+        </div>
+
         <!-- Carousel for mobile -->
 
         <div id="project-carousel" class='carousel carousel-animated carousel-animate-slide is-hidden-desktop'
                 data-size="1">
                 <div class='carousel-container'>
                         <div class='carousel-item is-active'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
+                                <div class="card">
+                                        <div class="card-image">
+                                                <figure class="image is-16by9">
+                                                        <img src="assets/images/hangman.jpg" alt="Placeholder image">
+                                                </figure>
+                                        </div>
+                                        <div class="card-content">
+
+                                                <div class="content">
+                                                        <h5>Spaghetti Western Hangman</h5>
+                                                        <hr>
+                                                        <p>This is a hangman game where you use the keyboard to enter letter guesses.
+                                                                Correct guesses populate the hangman spaces, incorrect guesses are displayed in the area for incorrect letters.
+                                                        </p>
+                                                </div>
+                                                <div class="tags">
+                                                        <span class="tag is-dark">HTML 5</span>
+                                                        <span class="tag is-dark">CSS 3</span>
+                                                        <span class="tag is-dark">JavaScript</span>
+                                                        <span class="tag is-dark">jQuery</span>
+                                                </div>
+                                        </div>
+                                        <footer class="card-footer">
+                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span>Live View</span></a>
+                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span>GitHub Repo</span></a>
+                                        </footer>
+                                </div>
                         </div>
                         <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
+                                        <div class="card">
+                                                        <div class="card-image">
+                                                                <figure class="image is-16by9">
+                                                                        <img src="assets/images/rps.jpg" alt="Placeholder image">
+                                                                </figure>
+                                                        </div>
+                                                        <div class="card-content">
+                
+                                                                <div class="content">
+                                                                        <h5>RPS Multiplayer w/ Chat</h5>
+                                                                        <hr>
+                                                                        <p>This game allows two people to play rock, paper, scissors online. 
+                                                                                        To play, two people should connect to the link below (only two people can connect at once).
+                                                                                        For testing purposes you may open in two browser tabs.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="tags">
+                                                                        <span class="tag is-dark">HTML 5</span>
+                                                                        <span class="tag is-dark">CSS 3</span>
+                                                                        <span class="tag is-dark">JavaScript</span>
+                                                                        <span class="tag is-dark">Firebase</span>
+                                                                </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>Live View</span></a>
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>GitHub Repo</span></a>
+                                                        </footer>
+                                                </div>
                         </div>
                         <div class='carousel-item'>
                                 <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
@@ -296,13 +413,13 @@
                 </div>
         </div>
 
-        <footer class="footer">
+        <!-- <footer class="footer">
                 <div class="content has-text-centered">
                         <p>
                                 &copy;2018 Chris Lynam
                         </p>
                 </div>
-        </footer>
+        </footer> -->
 </body>
 
 </html>
