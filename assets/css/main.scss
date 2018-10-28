@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 $navbar-background-color: #d8d3c7;
-$footer-background-color: #fff4de;
 $body-background-color: #2f3d32;
 $footer-height: 20px;
 $text: #18291f;
@@ -134,13 +133,32 @@ body {
         height: 100vh;
 }
 
+h1, h2, h3, h4, h5 {
+        font-family: 'Coda', cursive;
+}
+
+.navbar {
+        background-image: url("../images/gear-background-header.gif");
+        background-position-y: bottom;
+        background-repeat: no-repeat; 
+        background-size: 100vw; 
+}
+
+.modal-card-title {
+        font-family: 'Coda', cursive;
+}
+
+.progress:not(:last-child) {
+        margin-bottom: .5rem;
+}
+
 .content h5 {
         margin-bottom: 0.4em;
     }
 
 .tag:not(body) {
         font-size: .7rem;
-        height: 1.75em;
+        height: 1.6em;
 }
 
 // a .navbar-item :hover{

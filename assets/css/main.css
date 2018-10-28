@@ -11253,7 +11253,7 @@ label.panel-block:hover {
 }
 
 .footer {
-  background-color: #fff4de;
+  background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
 }
 
@@ -11671,13 +11671,32 @@ body {
   height: 100vh;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Coda', cursive;
+}
+
+.navbar {
+  background-image: url("../images/gear-background-header.gif");
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.modal-card-title {
+  font-family: 'Coda', cursive;
+}
+
+.progress:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
 .content h5 {
   margin-bottom: 0.4em;
 }
 
 .tag:not(body) {
   font-size: .7rem;
-  height: 1.75em;
+  height: 1.6em;
 }
 
 .carousel-nav-right, .carousel-nav-left {
