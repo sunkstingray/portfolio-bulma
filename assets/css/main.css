@@ -11694,12 +11694,14 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.4em;
 }
 
-#project-carousel-mobile .tag {
-  font-size: .65rem !important;
+.controls {
+  width: 100%;
+  text-align: center;
+  color: #d8d3c7;
 }
 
-.carousel-nav-right, .carousel-nav-left {
-  color: #fff4de;
+#left-button, #right-button {
+  cursor: pointer;
 }
 
 #logo {
@@ -11714,6 +11716,15 @@ h1, h2, h3, h4, h5 {
 
 .headshot {
   margin: 0 2rem 1rem 0;
+}
+
+#project-carousel {
+  background: rgba(216, 211, 199, 0.5) !important;
+}
+
+.card, .navbar {
+  -webkit-box-shadow: 4px 4px 14px #444;
+          box-shadow: 4px 4px 14px #444;
 }
 
 .footer {
@@ -11812,5 +11823,11 @@ h1, h2, h3, h4, h5 {
 .cls-18 {
   -webkit-filter: url(#luminosity-noclip);
           filter: url(#luminosity-noclip);
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    margin: 1em !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

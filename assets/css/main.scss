@@ -10,6 +10,7 @@ $hr-background-color: #dabebe;
 $hr-height: 1px;
 $hr-margin: 0 0 .5rem 0;
 
+
 @import "../../node_modules/bulma/bulma.sass";
 
 @import "../../node_modules/bulma-carousel/dist/css/bulma-carousel.sass";
@@ -19,6 +20,7 @@ $hr-margin: 0 0 .5rem 0;
 $gear: #85ab8f;
 $text: #fff4de;
 $box-color: #18291f;
+$nav-color: #d8d3c7;
 
 
 // Gear animation
@@ -153,12 +155,26 @@ h1, h2, h3, h4, h5 {
         margin-bottom: 0.4em;
     }
 
-#project-carousel-mobile .tag {
-        font-size: .65rem !important;
+// #project-carousel-mobile .tag {
+//         font-size: .65rem !important;
+// }
+
+// .carousel-nav-right, .carousel-nav-left {
+//         color: $nav-color;
+//         font-size: 1.75rem;
+//         padding: 0 1em !important;
+//         line-height: 1;
+// }
+
+
+.controls {
+        width: 100%;
+        text-align: center;
+        color: $nav-color;
 }
 
-.carousel-nav-right, .carousel-nav-left {
-        color: $text;
+#left-button, #right-button {
+        cursor: pointer;
 }
 
 #logo {
@@ -173,6 +189,13 @@ h1, h2, h3, h4, h5 {
 
 .headshot {
         margin: 0 2rem 1rem 0;
+}
+
+#project-carousel {
+        background: rgba(216, 211, 199, .5) !important;
+}
+.card, .navbar {
+        box-shadow: 4px 4px 14px #444;
 }
 
 .footer {
@@ -261,3 +284,9 @@ h1, h2, h3, h4, h5 {
 .cls-18 {
         filter: url(#luminosity-noclip);
 }
+
+@media only screen and (min-width: 1024px) {
+        .card {
+            margin: 1em !important;
+        }
+    }
