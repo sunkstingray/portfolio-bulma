@@ -11694,6 +11694,21 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.4em;
 }
 
+.slick-next {
+  right: 40px;
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 9999;
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #000;
+  font-size: 50px;
+  opacity: .2;
+}
+
 .controls {
   width: 100%;
   text-align: center;
@@ -11702,6 +11717,7 @@ h1, h2, h3, h4, h5 {
 
 #left-button, #right-button {
   cursor: pointer;
+  margin: 35px 50px;
 }
 
 #logo {
@@ -11828,6 +11844,26 @@ h1, h2, h3, h4, h5 {
 @media only screen and (min-width: 1024px) {
   .card {
     margin: 1em !important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .card-content {
+    padding: .5rem;
+    font-size: .9rem;
+    line-height: 1.2;
+  }
+  .tag:not(body) {
+    font-size: .65rem !important;
+  }
+  #left-button, #right-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #left-button, #right-button {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
