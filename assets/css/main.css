@@ -11706,7 +11706,7 @@ h1, h2, h3, h4, h5 {
 .slick-prev::before, .slick-next::before {
   color: #000;
   font-size: 50px;
-  opacity: .2;
+  opacity: .1;
 }
 
 .controls {
@@ -11861,7 +11861,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 700px) {
   #left-button, #right-button {
     display: none;
   }
