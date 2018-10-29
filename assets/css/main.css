@@ -11668,7 +11668,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw;
   padding-bottom: 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {
@@ -11694,13 +11694,12 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.4em;
 }
 
-.tag:not(body) {
-  font-size: .7rem;
-  height: 1.6em;
+#project-carousel-mobile .tag {
+  font-size: .65rem !important;
 }
 
 .carousel-nav-right, .carousel-nav-left {
-  color: #d8d3c7;
+  color: #fff4de;
 }
 
 #logo {
@@ -11778,7 +11777,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .cls-11 {
-  fill: #2d4637;
+  fill: #18291f;
 }
 
 .cls-12 {

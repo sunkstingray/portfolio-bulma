@@ -205,22 +205,22 @@
                                                 <i class="fa fa-user" aria-hidden="true"></i>
                                         </span>
                                         <span>About Me</span></a>
-                                <a class="navbar-item">
+                                <a class="navbar-item" href="https://github.com/sunkstingray">
                                         <span class="icon">
                                                 <i class="fa fa-github-square" aria-hidden="true"></i>
                                         </span>
                                         <span>GitHub</span></a>
-                                <a class="navbar-item">
+                                <a class="navbar-item" href="https://www.linkedin.com/in/christopher-lynam/">
                                         <span class="icon">
                                                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                                         </span>
                                         <span>LinkedIn</span></a>
-                                <a class="navbar-item">
+                                <a class="navbar-item" href="assets/images/chris-lynam-resume.pdf">
                                         <span class="icon">
                                                 <i class="fa fa-file-text" aria-hidden="true"></i>
                                         </span>
                                         <span>Resum&eacute;</span></a>
-                                <a class="navbar-item">
+                                <a class="navbar-item" href="mailto:lynam.chris@gmail.com">
                                         <span class="icon">
                                                 <i class="fa fa-envelope-square" aria-hidden="true"></i>
                                         </span>
@@ -293,8 +293,8 @@
 
         <!-- Carousel for mobile -->
 
-        <div id="project-carousel" class='carousel carousel-animated carousel-animate-slide is-hidden-desktop'
-                data-size="1" data-autoplay="true">
+        <div id="project-carousel-mobile" class='carousel carousel-animated carousel-animate-slide is-hidden-desktop'
+                data-size="1" data-autoplay="true" data-delay="7000">
                 <div class='carousel-container'>
                         <div class='carousel-item is-active'>
                                 <div class="card">
@@ -316,10 +316,10 @@
                                                         </p>
                                                 </div>
                                                 <div class="tags">
-                                                        <span class="tag is-dark">HTML 5</span>
-                                                        <span class="tag is-dark">CSS 3</span>
-                                                        <span class="tag is-dark">JavaScript</span>
-                                                        <span class="tag is-dark">jQuery</span>
+                                                        <span class="tag is-dark smaller">HTML 5</span>
+                                                        <span class="tag is-dark smaller">CSS 3</span>
+                                                        <span class="tag is-dark smaller">JavaScript</span>
+                                                        <span class="tag is-dark smaller">jQuery</span>
                                                 </div>
                                         </div>
                                         <footer class="card-footer">
@@ -385,8 +385,9 @@
                                                         <h5>NapsterVents</h5>
                                                         <hr>
                                                         <p>This was a group project that combined the Napster API for
-                                                                artist info
-                                                                and the TicketMaster API for concert info.
+                                                                artist info and the TicketMaster API for concert info.
+                                                                You can enter an artist name and zip code and it will
+                                                                return artist info and concert dates for your area.
                                                         </p>
                                                 </div>
                                                 <div class="tags">
@@ -410,17 +411,111 @@
                                 </div>
                         </div>
                         <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
+                                <div class="card">
+                                        <div class="card-image">
+                                                <figure class="image is-16by9">
+                                                        <img src="assets/images/star-wars.jpg" alt="Star Wars RPG Screenshot">
+                                                </figure>
+                                        </div>
+                                        <div class="card-content">
+
+                                                <div class="content">
+                                                        <h5>Star Wars RPG</h5>
+                                                        <hr>
+                                                        <p>Star Wars role-playing game where you choose your character,
+                                                                then choose who to battle. You continue to battle until
+                                                                you have either defeated all opponents or been defeated
+                                                                yourself.
+                                                        </p>
+                                                </div>
+                                                <div class="tags">
+                                                        <span class="tag is-dark smaller">HTML 5</span>
+                                                        <span class="tag is-dark smaller">CSS 3</span>
+                                                        <span class="tag is-dark smaller">JavaScript</span>
+                                                        <span class="tag is-dark smaller">jQuery</span>
+                                                </div>
+                                        </div>
+                                        <footer class="card-footer">
+                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span>Live View</span></a>
+                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span>GitHub Repo</span></a>
+                                        </footer>
+                                </div>
                         </div>
                         <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
+                                <div class="card">
+                                        <div class="card-image">
+                                                <figure class="image is-16by9">
+                                                        <img src="assets/images/kcsf.jpg" alt="KC Store Fixtures Screenshot">
+                                                </figure>
+                                        </div>
+                                        <div class="card-content">
+
+                                                <div class="content">
+                                                        <h5>KC Store Fixtures: Internal Shop Schedule</h5>
+                                                        <hr>
+                                                        <p>Internal web app that conects to the NetSuite API and pulls
+                                                                the shop schedule for each department. Allows searching
+                                                                and updating of job status.
+                                                        </p>
+                                                </div>
+                                                <div class="tags">
+                                                        <span class="tag is-dark smaller">HTML 5</span>
+                                                        <span class="tag is-dark smaller">CSS 3</span>
+                                                        <span class="tag is-dark smaller">Node.js</span>
+                                                        <span class="tag is-dark smaller">Express.js</span>
+                                                        <span class="tag is-dark smaller">React</span>
+                                                </div>
+                                        </div>
+                                        
+                                </div>
                         </div>
                         <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
+                                <div class="card">
+                                        <div class="card-image">
+                                                <figure class="image is-16by9">
+                                                        <img src="assets/images/rotten.jpg" alt="Rotten Potatoes Screenshot">
+                                                </figure>
+                                        </div>
+                                        <div class="card-content">
+
+                                                <div class="content">
+                                                        <h5>Rotten Potatoes</h5>
+                                                        <hr>
+                                                        <p>Videogame review application that allows users to create an account, 
+                                                                log in, view reviews from other users, add reviews for games, 
+                                                                and add comments about games.
+                                                        </p>
+                                                </div>
+                                                <div class="tags">
+                                                        <span class="tag is-dark smaller">HTML 5</span>
+                                                        <span class="tag is-dark smaller">CSS 3</span>
+                                                        <span class="tag is-dark smaller">Node.js</span>
+                                                        <span class="tag is-dark smaller">Express.js</span>
+                                                        <span class="tag is-dark smaller">Handlebars</span>
+                                                        <span class="tag is-dark smaller">Sequelize</span>
+                                                        <span class="tag is-dark smaller">mySQL</span>
+                                                </div>
+                                        </div>
+                                        <footer class="card-footer">
+                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span>Live View</span></a>
+                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span>GitHub Repo</span></a>
+                                        </footer>
+                                </div>
                         </div>
-                        <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                        </div>
+
+
                 </div>
                 <div class="carousel-navigation is-centered">
                         <div class="carousel-nav-left">
@@ -434,99 +529,228 @@
 
         <!-- Carousel for desktop -->
 
-        <div id="project-carousel" class='carousel carousel-animated carousel-animate-slide is-hidden-touch' data-size="2" data-autoplay="true">
+        <div id="project-carousel-desktop" class='carousel carousel-animated carousel-animate-slide is-hidden-touch'
+                data-size="2" data-autoplay="true" data-delay="7000">
                 <div class='carousel-container'>
-                        <div class='carousel-item is-active'>
-                                <div class="card">
-                                        <div class="card-image">
-                                                <figure class="image is-16by9">
-                                                        <img src="assets/images/hangman.jpg" alt="Hangman Screenshot">
-                                                </figure>
-                                        </div>
-                                        <div class="card-content">
-
-                                                <div class="content">
-                                                        <h5>Spaghetti Western Hangman</h5>
-                                                        <hr>
-                                                        <p>This is a hangman game where you use the keyboard to enter
-                                                                letter guesses.
-                                                                Correct guesses populate the hangman spaces, incorrect
-                                                                guesses are displayed in the area for incorrect
-                                                                letters.
-                                                        </p>
-                                                </div>
-                                                <div class="tags">
-                                                        <span class="tag is-dark">HTML 5</span>
-                                                        <span class="tag is-dark">CSS 3</span>
-                                                        <span class="tag is-dark">JavaScript</span>
-                                                        <span class="tag is-dark">jQuery</span>
-                                                </div>
-                                        </div>
-                                        <footer class="card-footer">
-                                                <a href="#" class="card-footer-item"><span class="icon">
-                                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                        </span>
-                                                        <span>Live View</span></a>
-                                                <a href="#" class="card-footer-item"><span class="icon">
-                                                                <i class="fa fa-github" aria-hidden="true"></i>
-                                                        </span>
-                                                        <span>GitHub Repo</span></a>
-                                        </footer>
-                                </div>
-                        </div>
-                        <div class='carousel-item'>
-                                <div class="card">
-                                        <div class="card-image">
-                                                <figure class="image is-16by9">
-                                                        <img src="assets/images/rps.jpg" alt="RPS Screenshot">
-                                                </figure>
-                                        </div>
-                                        <div class="card-content">
-
-                                                <div class="content">
-                                                        <h5>RPS Multiplayer w/ Chat</h5>
-                                                        <hr>
-                                                        <p>This game allows two people to play rock, paper, scissors
-                                                                online.
-                                                                To play, two people should connect to the link below
-                                                                (only two people can connect at once).
-                                                                For testing purposes you may open in two browser tabs.
-                                                        </p>
-                                                </div>
-                                                <div class="tags">
-                                                        <span class="tag is-dark">HTML 5</span>
-                                                        <span class="tag is-dark">CSS 3</span>
-                                                        <span class="tag is-dark">JavaScript</span>
-                                                        <span class="tag is-dark">Firebase</span>
+                                <div class='carousel-item is-active'>
+                                                <div class="card">
+                                                        <div class="card-image">
+                                                                <figure class="image is-16by9">
+                                                                        <img src="assets/images/hangman.jpg" alt="Hangman Screenshot">
+                                                                </figure>
+                                                        </div>
+                                                        <div class="card-content">
+                
+                                                                <div class="content">
+                                                                        <h5>Spaghetti Western Hangman</h5>
+                                                                        <hr>
+                                                                        <p>This is a hangman game where you use the keyboard to enter
+                                                                                letter guesses.
+                                                                                Correct guesses populate the hangman spaces, incorrect
+                                                                                guesses are displayed in the area for incorrect
+                                                                                letters.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="tags">
+                                                                        <span class="tag is-dark smaller">HTML 5</span>
+                                                                        <span class="tag is-dark smaller">CSS 3</span>
+                                                                        <span class="tag is-dark smaller">JavaScript</span>
+                                                                        <span class="tag is-dark smaller">jQuery</span>
+                                                                </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>Live View</span></a>
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>GitHub Repo</span></a>
+                                                        </footer>
                                                 </div>
                                         </div>
-                                        <footer class="card-footer">
-                                                <a href="#" class="card-footer-item"><span class="icon">
-                                                                <i class="fa fa-eye" aria-hidden="true"></i>
-                                                        </span>
-                                                        <span>Live View</span></a>
-                                                <a href="#" class="card-footer-item"><span class="icon">
-                                                                <i class="fa fa-github" aria-hidden="true"></i>
-                                                        </span>
-                                                        <span>GitHub Repo</span></a>
-                                        </footer>
-                                </div>
-                        </div>
-                        <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                        </div>
-                        <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                        </div>
-                        <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                        </div>
-                        <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                        </div>
-                        <div class='carousel-item'>
-                                <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                        </div>
+                                        <div class='carousel-item'>
+                                                <div class="card">
+                                                        <div class="card-image">
+                                                                <figure class="image is-16by9">
+                                                                        <img src="assets/images/rps.jpg" alt="RPS Screenshot">
+                                                                </figure>
+                                                        </div>
+                                                        <div class="card-content">
+                
+                                                                <div class="content">
+                                                                        <h5>RPS Multiplayer w/ Chat</h5>
+                                                                        <hr>
+                                                                        <p>This game allows two people to play rock, paper, scissors
+                                                                                online.
+                                                                                To play, two people should connect to the link below
+                                                                                (only two people can connect at once).
+                                                                                For testing purposes you may open in two browser tabs.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="tags">
+                                                                        <span class="tag is-dark">HTML 5</span>
+                                                                        <span class="tag is-dark">CSS 3</span>
+                                                                        <span class="tag is-dark">JavaScript</span>
+                                                                        <span class="tag is-dark">Firebase</span>
+                                                                </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>Live View</span></a>
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>GitHub Repo</span></a>
+                                                        </footer>
+                                                </div>
+                                        </div>
+                                        <div class='carousel-item'>
+                                                <div class="card">
+                                                        <div class="card-image">
+                                                                <figure class="image is-16by9">
+                                                                        <img src="assets/images/napstervents.jpg" alt="NapsterVents Screenshot">
+                                                                </figure>
+                                                        </div>
+                                                        <div class="card-content">
+                
+                                                                <div class="content">
+                                                                        <h5>NapsterVents</h5>
+                                                                        <hr>
+                                                                        <p>This was a group project that combined the Napster API for
+                                                                                artist info and the TicketMaster API for concert info.
+                                                                                You can enter an artist name and zip code and it will
+                                                                                return artist info and concert dates for your area.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="tags">
+                                                                        <span class="tag is-dark">HTML 5</span>
+                                                                        <span class="tag is-dark">CSS 3</span>
+                                                                        <span class="tag is-dark">JavaScript</span>
+                                                                        <span class="tag is-dark">jQuery</span>
+                                                                        <span class="tag is-dark">Firebase</span>
+                                                                </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>Live View</span></a>
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>GitHub Repo</span></a>
+                                                        </footer>
+                                                </div>
+                                        </div>
+                                        <div class='carousel-item'>
+                                                <div class="card">
+                                                        <div class="card-image">
+                                                                <figure class="image is-16by9">
+                                                                        <img src="assets/images/star-wars.jpg" alt="Star Wars RPG Screenshot">
+                                                                </figure>
+                                                        </div>
+                                                        <div class="card-content">
+                
+                                                                <div class="content">
+                                                                        <h5>Star Wars RPG</h5>
+                                                                        <hr>
+                                                                        <p>Star Wars role-playing game where you choose your character,
+                                                                                then choose who to battle. You continue to battle until
+                                                                                you have either defeated all opponents or been defeated
+                                                                                yourself.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="tags">
+                                                                        <span class="tag is-dark smaller">HTML 5</span>
+                                                                        <span class="tag is-dark smaller">CSS 3</span>
+                                                                        <span class="tag is-dark smaller">JavaScript</span>
+                                                                        <span class="tag is-dark smaller">jQuery</span>
+                                                                </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>Live View</span></a>
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>GitHub Repo</span></a>
+                                                        </footer>
+                                                </div>
+                                        </div>
+                                        <div class='carousel-item'>
+                                                <div class="card">
+                                                        <div class="card-image">
+                                                                <figure class="image is-16by9">
+                                                                        <img src="assets/images/kcsf.jpg" alt="KC Store Fixtures Screenshot">
+                                                                </figure>
+                                                        </div>
+                                                        <div class="card-content">
+                
+                                                                <div class="content">
+                                                                        <h5>KC Store Fixtures: Internal Shop Schedule</h5>
+                                                                        <hr>
+                                                                        <p>Internal web app that conects to the NetSuite API and pulls
+                                                                                the shop schedule for each department. Allows searching
+                                                                                and updating of job status.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="tags">
+                                                                        <span class="tag is-dark smaller">HTML 5</span>
+                                                                        <span class="tag is-dark smaller">CSS 3</span>
+                                                                        <span class="tag is-dark smaller">Node.js</span>
+                                                                        <span class="tag is-dark smaller">Express.js</span>
+                                                                        <span class="tag is-dark smaller">React</span>
+                                                                </div>
+                                                        </div>
+                                                        
+                                                </div>
+                                        </div>
+                                        <div class='carousel-item'>
+                                                <div class="card">
+                                                        <div class="card-image">
+                                                                <figure class="image is-16by9">
+                                                                        <img src="assets/images/rotten.jpg" alt="Rotten Potatoes Screenshot">
+                                                                </figure>
+                                                        </div>
+                                                        <div class="card-content">
+                
+                                                                <div class="content">
+                                                                        <h5>Rotten Potatoes</h5>
+                                                                        <hr>
+                                                                        <p>Videogame review application that allows users to create an account, 
+                                                                                log in, view reviews from other users, add reviews for games, 
+                                                                                and add comments about games.
+                                                                        </p>
+                                                                </div>
+                                                                <div class="tags">
+                                                                        <span class="tag is-dark smaller">HTML 5</span>
+                                                                        <span class="tag is-dark smaller">CSS 3</span>
+                                                                        <span class="tag is-dark smaller">Node.js</span>
+                                                                        <span class="tag is-dark smaller">Express.js</span>
+                                                                        <span class="tag is-dark smaller">Handlebars</span>
+                                                                        <span class="tag is-dark smaller">Sequelize</span>
+                                                                        <span class="tag is-dark smaller">mySQL</span>
+                                                                </div>
+                                                        </div>
+                                                        <footer class="card-footer">
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>Live View</span></a>
+                                                                <a href="#" class="card-footer-item"><span class="icon">
+                                                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <span>GitHub Repo</span></a>
+                                                        </footer>
+                                                </div>
+                                        </div>
+                
                 </div>
                 <div class="carousel-navigation is-centered">
                         <div class="carousel-nav-left">

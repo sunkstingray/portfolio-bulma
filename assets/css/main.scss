@@ -17,11 +17,8 @@ $hr-margin: 0 0 .5rem 0;
 // non-Bulma sass variables
 
 $gear: #85ab8f;
-$text: #4C3434;
+$text: #fff4de;
 $box-color: #18291f;
-$light: #d8d3c7;
-// $box-color: #2d4637;
-// $text: #ed1c24;
 
 
 // Gear animation
@@ -130,7 +127,7 @@ body {
         background-repeat: no-repeat;
         background-size: 100vw;
         padding-bottom: 0;
-        height: 100vh;
+        min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {
@@ -156,17 +153,12 @@ h1, h2, h3, h4, h5 {
         margin-bottom: 0.4em;
     }
 
-.tag:not(body) {
-        font-size: .7rem;
-        height: 1.6em;
+#project-carousel-mobile .tag {
+        font-size: .65rem !important;
 }
 
-// a .navbar-item :hover{
-//         color: #b62121;
-// }
-
 .carousel-nav-right, .carousel-nav-left {
-        color: $light;
+        color: $text;
 }
 
 #logo {
@@ -193,7 +185,7 @@ h1, h2, h3, h4, h5 {
 
 .cls-2,
 .cls-3 {
-        fill: #85ab8f;
+        fill: $gear;
 }
 
 .cls-3,
@@ -238,12 +230,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .cls-11 {
-        fill: #2d4637;
+        fill: $box-color;
         // opacity: 0.8;
 }
 
 .cls-12 {
-        fill: #fff4de;
+        fill: $text;
 }
 
 .cls-13 {
