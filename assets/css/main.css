@@ -11700,7 +11700,7 @@ h1, h2, h3, h4, h5 {
 
 .slick-prev {
   left: 10px;
-  z-index: 9999;
+  z-index: 30;
 }
 
 .slick-prev::before, .slick-next::before {
@@ -11729,6 +11729,7 @@ h1, h2, h3, h4, h5 {
 .logo-image {
   padding: 0;
   height: 3.25rem;
+  margin-left: -13px;
 }
 
 .headshot {
@@ -11766,6 +11767,8 @@ h1, h2, h3, h4, h5 {
 .cls-2,
 .cls-3 {
   fill: #85ab8f;
+  stroke: #18291f;
+  stroke-width: 0.15px;
 }
 
 .cls-3,

@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5 {
 
 .slick-prev {
         left: 10px;
-        z-index: 9999;
+        z-index: 30;
 }
 
 .slick-prev::before, .slick-next::before {
@@ -169,17 +169,6 @@ h1, h2, h3, h4, h5 {
         font-size: 50px;
         opacity: .1;
 }
-
-// #project-carousel-mobile .tag {
-//         font-size: .65rem !important;
-// }
-
-// .carousel-nav-right, .carousel-nav-left {
-//         color: $nav-color;
-//         font-size: 1.75rem;
-//         padding: 0 1em !important;
-//         line-height: 1;
-// }
 
 
 .controls {
@@ -202,6 +191,7 @@ h1, h2, h3, h4, h5 {
 .logo-image {
         padding: 0;
         height: 3.25rem;
+        margin-left: -13px;
 }
 
 .headshot {
@@ -215,16 +205,11 @@ h1, h2, h3, h4, h5 {
         box-shadow: 4px 4px 14px #444;
 }
 
-// .card {
-//         top: 0;
-//         bottom; 0;
-// }
-
 .card-footer {
         border-bottom: 1px solid hsl(0, 0%, 86%);
 }
 
-//flex stuff
+//flex stuff to make the cards the same height
 .slick-track{
 	display: flex;
 	
@@ -245,6 +230,8 @@ h1, h2, h3, h4, h5 {
 .cls-2,
 .cls-3 {
         fill: $gear;
+        stroke: $box-color;
+        stroke-width: 0.15px;
 }
 
 .cls-3,

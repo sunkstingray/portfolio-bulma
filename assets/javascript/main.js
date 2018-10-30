@@ -69,16 +69,32 @@ $(document).ready(function () {
                 $(".navbar-menu").toggleClass("is-active");
         });
 
+        // About Me Modal
+
         $("#about-me").click(function () {
-                $(".modal").toggleClass("is-active");
+                $("#about-modal").toggleClass("is-active");
         });
 
-        $(".delete").click(function () {
-                $(".modal").toggleClass("is-active");
+        $("#about-delete").click(function () {
+                $("#about-modal").toggleClass("is-active");
         });
 
-        $(".modal-background").click(function () {
-                $(".modal").toggleClass("is-active");
+        $("#about-background").click(function () {
+                $("#about-modal").toggleClass("is-active");
+        });
+
+        // KCSF Modal
+
+        $("#kc-store").click(function () {
+                $("#kcsf-modal").toggleClass("is-active");
+        });
+
+        $("#kcsf-delete").click(function () {
+                $("#kcsf-modal").toggleClass("is-active");
+        });
+
+        $("#kcsf-background").click(function () {
+                $("#kcsf-modal").toggleClass("is-active");
         });
 });
 
