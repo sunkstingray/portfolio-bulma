@@ -194,13 +194,14 @@ h1, h2, h3, h4, h5 {
 }
 
 #logo {
-        height: 45px;
+        height: 90px;
         padding: 0;
         overflow: visible;
 }
 
 .logo-image {
-        padding: 0 .75rem;
+        padding: 0;
+        height: 3.25rem;
 }
 
 .headshot {
@@ -214,9 +215,28 @@ h1, h2, h3, h4, h5 {
         box-shadow: 4px 4px 14px #444;
 }
 
-.footer {
-        padding: 1.5rem;
+// .card {
+//         top: 0;
+//         bottom; 0;
+// }
+
+.card-footer {
+        border-bottom: 1px solid hsl(0, 0%, 86%);
 }
+
+//flex stuff
+.slick-track{
+	display: flex;
+	
+	.slick-slide{
+		// display: flex;
+		height: auto;
+		// align-items: center; //optional
+		// justify-content: center; //optional
+	}
+}
+
+// SVG properties
 
 .cls-1 {
         mask: url(#mask);
@@ -301,12 +321,19 @@ h1, h2, h3, h4, h5 {
         filter: url(#luminosity-noclip);
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 700px) {
         .card {
             margin: 1em !important;
         }
 
     }
+
+@media only screen and (max-width: 1024px) {
+        #left-button, #right-button {
+                display: none;
+        }
+}
+
 
 @media only screen and (max-width: 350px) {
 .card-content {
@@ -321,9 +348,3 @@ h1, h2, h3, h4, h5 {
         display: none;
 }
 }
-
-@media only screen and (max-width: 700px) {
-        #left-button, #right-button {
-                display: none;
-        }
-        }

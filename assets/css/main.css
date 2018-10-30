@@ -11721,13 +11721,14 @@ h1, h2, h3, h4, h5 {
 }
 
 #logo {
-  height: 45px;
+  height: 90px;
   padding: 0;
   overflow: visible;
 }
 
 .logo-image {
-  padding: 0 .75rem;
+  padding: 0;
+  height: 3.25rem;
 }
 
 .headshot {
@@ -11743,8 +11744,18 @@ h1, h2, h3, h4, h5 {
           box-shadow: 4px 4px 14px #444;
 }
 
-.footer {
-  padding: 1.5rem;
+.card-footer {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-track .slick-slide {
+  height: auto;
 }
 
 .cls-1 {
@@ -11841,9 +11852,15 @@ h1, h2, h3, h4, h5 {
           filter: url(#luminosity-noclip);
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 700px) {
   .card {
     margin: 1em !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #left-button, #right-button {
+    display: none;
   }
 }
 
@@ -11856,12 +11873,6 @@ h1, h2, h3, h4, h5 {
   .tag:not(body) {
     font-size: .65rem !important;
   }
-  #left-button, #right-button {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 700px) {
   #left-button, #right-button {
     display: none;
   }

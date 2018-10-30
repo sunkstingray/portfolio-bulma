@@ -23,7 +23,16 @@ $(document).ready(function () {
                                 breakpoint: 1910,
                                 settings: {
                                         slidesToShow: 3,
-                                        slidesToScroll: 3
+                                        slidesToScroll: 3,
+                                        arrows: false
+                                }
+                        },
+                        {
+                                breakpoint: 1025,
+                                settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2,
+                                        arrows: true
                                 }
                         },
                         {
