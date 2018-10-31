@@ -165,9 +165,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .slick-prev::before, .slick-next::before {
-        color: #000;
+        color: rgba(0, 0, 0, .1);
         font-size: 50px;
-        opacity: .1;
+        opacity: 1;
+}
+
+.slick-prev:hover::before, .slick-next:hover::before {
+        color: rgba(0, 0, 0, .5);
 }
 
 
