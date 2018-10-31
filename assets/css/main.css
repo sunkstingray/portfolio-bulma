@@ -11713,6 +11713,10 @@ h1, h2, h3, h4, h5 {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.slick-prev:active::before, .slick-next:active::before, .slick-prev:visited::before, .slick-next:visited::before {
+  color: rgba(0, 0, 0, 0.1);
+}
+
 .controls {
   width: 100%;
   text-align: center;
