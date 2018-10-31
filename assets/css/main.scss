@@ -214,11 +214,16 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	
 	.slick-slide{
-		// display: flex;
+                display: flex;
+                flex-direction: column;
 		height: auto;
 		// align-items: center; //optional
 		// justify-content: center; //optional
 	}
+}
+
+.card-content {
+        flex-grow: 1;
 }
 
 // SVG properties
